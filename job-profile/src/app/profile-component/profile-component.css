@@ -65,7 +65,7 @@ section {
 .background-blur {
   position: fixed;
   inset: 0;
-  background: url('/assets/images/abstract-bg.png') center/cover no-repeat;
+  background: url("/assets/images/abstract-bg.png") center/cover no-repeat;
   filter: blur(8px);
   z-index: -1;
 }
@@ -76,12 +76,13 @@ section {
   padding: 2rem;
 }
 
-section, .hero {
+section,
+.hero {
   background: rgba(255, 255, 255, 0.85);
   padding: 1rem;
   border-radius: 10px;
   margin-bottom: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .social-links {
@@ -94,14 +95,18 @@ section, .hero {
 
 .social-links a {
   display: inline-block;
-  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  transition:
+    transform 0.2s ease-in-out,
+    opacity 0.2s ease-in-out;
 }
 
 .social-links img {
   width: 32px;
   height: 32px;
   filter: grayscale(100%) brightness(0.9);
-  transition: filter 0.3s, transform 0.3s;
+  transition:
+    filter 0.3s,
+    transform 0.3s;
 }
 
 .social-links a:hover img {

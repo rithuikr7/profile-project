@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
   imports: [ProfileComponent, CommonModule],
   templateUrl: './app.html',
   styleUrl: './app.css',
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class App {
   protected title = 'job-profile';
