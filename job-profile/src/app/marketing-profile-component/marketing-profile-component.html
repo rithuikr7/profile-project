@@ -1,0 +1,355 @@
+<div>
+  <header [ngClass]="{ 'header-scrolled': scrolledDown }">
+    <div class="logo">Lynqa Strategic Finance</div>
+    <nav>
+      <ul>
+        <li><a class="menu" href="#">Home</a></li>
+        <li><a class="menu" href="#services">Services</a></li>
+        <li><a class="menu" href="#about">About</a></li>
+        <li><a class="menu" href="#contact">Contact</a></li>
+        <li><a class="menu" (click)="showTerms()">Terms Of Use</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div *ngIf="!termsVisible">
+    <section class="hero" id="hero">
+      <h1>Where Structure Meets Strategy</h1>
+      <p>
+        Elite strategic consulting for yield-driven corporates and investors
+      </p>
+    </section>
+ 
+    <section class="value-prop" id="value">
+      <div class="value-container">
+        <h2>Navigating Complexity With Clarity</h2>
+        <hr class="divider" />
+
+        <blockquote>
+          "Opportunities don’t just appear,they’re structured."
+        </blockquote>
+
+        <p>
+          In today’s evolving market, decision-makers face constant shifts—from
+          credit cycles and yield volatility to investor sentiment and
+          regulatory landscapes.
+          <br /><br />
+          These challenges bring both threats and rare monetizable windows.
+          That’s where Lynqa steps in.
+        </p>
+
+        <div class="value-highlights">
+          <div class="v-box">
+            <h3>We Help You</h3>
+            <ul class="custom-list">
+              <li>
+                <img
+                  src="assets/icons/check.svg"
+                  alt="Institutional Icon"
+                  style="
+                    width: 18px;
+                    height: 18px;
+                    vertical-align: middle;
+                    margin-right: 8px;
+                  "
+                />Decode institutional capital behavior
+              </li>
+              <li>
+                <img
+                  src="assets/icons/check.svg"
+                  alt="Institutional Icon"
+                  style="
+                    width: 18px;
+                    height: 18px;
+                    vertical-align: middle;
+                    margin-right: 8px;
+                  "
+                />Optimize yield positioning without violating compliance
+              </li>
+              <li>
+                <img
+                  src="assets/icons/check.svg"
+                  alt="Institutional Icon"
+                  style="
+                    width: 18px;
+                    height: 18px;
+                    vertical-align: middle;
+                    margin-right: 8px;
+                  "
+                />
+                Streamline documentation and deal presentation
+              </li>
+              <li>
+                <img
+                  src="assets/icons/check.svg"
+                  alt="Institutional Icon"
+                  style="
+                    width: 18px;
+                    height: 18px;
+                    vertical-align: middle;
+                    margin-right: 8px;
+                  "
+                />
+                Negotiate smarter, not harder
+              </li>
+              <li>
+                <img
+                  src="assets/icons/check.svg"
+                  alt="Institutional Icon"
+                  style="
+                    width: 18px;
+                    height: 18px;
+                    vertical-align: middle;
+                    margin-right: 8px;
+                  "
+                />Think clearly, act decisively, raise wisely
+              </li>
+            </ul>
+          </div>
+
+          <div class="v-box">
+            <h3>What You Avoid</h3>
+            <ul>
+              <li>
+                <img
+                  src="assets/icons/check.svg"
+                  alt="Institutional Icon"
+                  style="
+                    width: 18px;
+                    height: 18px;
+                    vertical-align: middle;
+                    margin-right: 8px;
+                  "
+                />
+                Paying yield premiums unnecessarily
+              </li>
+              <li>
+                <img
+                  src="assets/icons/check.svg"
+                  alt="Institutional Icon"
+                  style="
+                    width: 18px;
+                    height: 18px;
+                    vertical-align: middle;
+                    margin-right: 8px;
+                  "
+                />
+                Misalignment between need and market appetite
+              </li>
+              <li>
+                <img
+                  src="assets/icons/check.svg"
+                  alt="Institutional Icon"
+                  style="
+                    width: 18px;
+                    height: 18px;
+                    vertical-align: middle;
+                    margin-right: 8px;
+                  "
+                /> Stalled negotiations due to lack of clarity
+              </li>
+              <li>
+                <img
+                  src="assets/icons/check.svg"
+                  alt="Institutional Icon"
+                  style="
+                    width: 18px;
+                    height: 18px;
+                    vertical-align: middle;
+                    margin-right: 8px;
+                  "
+                />
+                Incomplete documentation cycles
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="services-container">
+        <div class="services-left">
+          <h2>Services</h2>
+          <div class="service">
+            <h3>CP Structuring & Issuance</h3>
+            <p>
+              Strategic advisory on commercial paper structuring, credit
+              alignment and issuance precision.
+            </p>
+          </div>
+          <div class="service">
+            <h3>Product Distribution Support</h3>
+            <p>
+              Targeted placement of financial products to high-intent
+              institutional and HNI buyers.
+            </p>
+          </div>
+          <div class="service">
+            <h3>Yield & Term Negotiation</h3>
+            <p>
+              Intelligence-led consulting to optimize yield, terms and market
+              fit.
+            </p>
+          </div>
+          <div class="service">
+            <h3>Deal Structuring Advisory</h3>
+            <p>
+              Custom consulting to build lean, high-performing capital
+              strategies.
+            </p>
+          </div>
+        </div>
+
+        <div class="services-right">
+          <h2>Why Us</h2>
+          <p>
+            Because you need more than spreadsheets-you need strategy.<br /><br />
+            We blend sharp analysis with smart negotiation to unlock capital
+            potential. Our insights don’t just guide-they close.
+            <br /><br />
+            At Lynqa, we don’t offer services. We craft financial dominance.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="edge" id="edge">
+      <div class="edge-flex">
+        <div class="edge-text">
+          <h2>Why Lynqa</h2>
+          <ul>
+            <li>
+              Strategic focus on yield, timing & capital access—not just
+              execution
+            </li>
+            <li>
+              Tailored consulting for commercial papers & non-convertible
+              debentures (NCDs)
+            </li>
+            <li>
+              Documentation support that ensures clarity, compliance & speed
+            </li>
+            <li>
+              Deep understanding of corporate funding behaviour and investor
+              sentiment
+            </li>
+            <li>
+              No distribution or advisory—just sharp negotiation and financial
+              insight
+            </li>
+          </ul>
+        </div>
+
+        <div class="edge-image">
+          <img
+            src="assets/images/handshake.png"
+            alt="Professional handshake meeting"
+          />
+          <blockquote class="edge-quote">
+            “Where decisions are made, Lynqa negotiates the edge.”
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-container">
+        <h2>About</h2>
+        <p>
+          Lynqa Strategic Finance operates as a strategic consulting brand that
+          supports companies in navigating private debt markets—without offering
+          regulated investment advice.
+          <br /><br />
+          We are not registered under SEBI and do not distribute financial
+          products or provide investment recommendations. Our focus lies in
+          facilitating structured conversations between companies and
+          prospective capital providers, primarily through commercial paper and
+          in future, non-convertible debentures (NCDs).
+          <br /><br />
+          By analyzing yield expectations, market behavior, and deal structures,
+          we assist in negotiating terms that align with both issuer and
+          investor interests—offering clarity, structure and access without
+          overstepping regulatory lines.
+        </p>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="faq-container">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <h3>Are you SEBI registered?</h3>
+          <p>
+            No. Lynqa Strategic Finance does not provide investment advice or
+            distribute financial products. We do not fall under SEBI’s
+            registration mandate.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>So what exactly do you offer?</h3>
+          <p>
+            We assist companies with capital strategy, deal negotiation,
+            documentation, and structuring—specifically around debt instruments
+            like commercial papers and NCDs.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Do you help investors?</h3>
+          <p>
+            We do not manage investor capital or offer investment advice. Our
+            engagement is with companies seeking to raise funds at optimal
+            terms.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can you draft term sheets or support documentation?</h3>
+          <p>
+            Yes, we assist in drafting term sheets, coordinating documentation,
+            and facilitating clean execution of structured debt deals.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>
+        Reach out to discuss your next deal or schedule a strategic
+        consultation.
+      </p>
+      <div class="contact-links">
+        <form
+          class="contact-form"
+          action="mailto:youremail@example.com"
+          method="POST"
+          enctype="text/plain"
+        >
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="cta-button">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Lynqa Strategic Finance. All rights reserved.</p>
+        <p>Based in India | contact&#64;lynqa.finance</p>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<app-terms *ngIf="termsVisible" (back)="hideTerms()"></app-terms>
