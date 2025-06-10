@@ -172,12 +172,16 @@ nav a:hover {
 }
 
 .v-box {
-  flex: 1 1 400px;
-  background-color: #1a1a1a;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(192, 167, 110, 0.2);
+  border-left: 4px solid #c0a76e;
+  border-radius: 12px;
   padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
 }
+
 
 .v-box:hover {
   box-shadow: 0 6px 20px rgba(192, 167, 110, 0.5);
