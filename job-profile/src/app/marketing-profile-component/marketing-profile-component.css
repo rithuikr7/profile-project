@@ -259,21 +259,42 @@ nav a:hover {
   margin-bottom: 30px;
 }
 
+.service {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease-in-out;
+}
+
+.service:hover {
+  box-shadow: 0 12px 30px rgba(192, 167, 110, 0.4);
+  border-left: 4px solid #c0a76e;
+  transform: translateY(-4px);
+}
+
 .service h3 {
-  font-size: 1.3rem;
-  margin-top: 20px;
-  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #f5f5f5;
+  margin-bottom: 10px;
 }
 
 .service p {
-  font-size: 0.95rem;
-  color: #bbbbbb;
-  margin-top: 5px;
+  font-size: 1rem;
+  color: #cccccc;
+  line-height: 1.6;
 }
+
 
 .services-right p {
   font-size: 1rem;
 }
+
+
 
 .cta-button {
   display: inline-block;
@@ -550,4 +571,73 @@ nav a:hover {
   background-attachment: fixed;
   padding: 100px 60px;
   color: #f5f5f5;
+}
+
+.mistakes-v2 {
+  padding: 100px 60px;
+  background: 
+    linear-gradient(to bottom, rgba(15, 15, 15, 0.96), rgba(15, 15, 15, 1)),
+    url('/assets/images/hero-bg.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #f5f5f5;
+}
+
+.mistakes-v2-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.mistakes-text {
+  flex: 1 1 55%;
+}
+
+.mistakes-text h2 {
+  font-size: 2.5rem;
+  font-family: "Cinzel", serif;
+  color: #c0a76e;
+  margin-bottom: 20px;
+}
+
+.mistakes-text .subtext {
+  font-size: 1.05rem;
+  color: #dddddd;
+  margin-bottom: 30px;
+}
+
+.mistakes-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.mistakes-list li {
+  margin-bottom: 16px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.mistakes-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #c0a76e;
+  font-weight: bold;
+}
+
+.mistakes-image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.mistakes-image img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
+  object-fit: cover;
 }
