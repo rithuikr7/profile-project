@@ -2,10 +2,11 @@ import { Component, HostListener } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { TermsComponent } from '../terms-component/terms.component';
 import { CommonModule } from '@angular/common';
+import { WhyUsComponent } from '../why-us.component/why-us.component';
 
 @Component({
   selector: 'app-marketing-profile-component',
-  imports: [MatIconModule, TermsComponent, CommonModule],
+  imports: [MatIconModule, TermsComponent, CommonModule, WhyUsComponent],
   templateUrl: './marketing-profile-component.html',
   styleUrl: './marketing-profile-component.css',
 })
@@ -28,6 +29,7 @@ export class MarketingProfileComponent {
   showTerms() {
     this.termsVisible = true;
   }
+
 
   hideTerms() {
     this.termsVisible = false;

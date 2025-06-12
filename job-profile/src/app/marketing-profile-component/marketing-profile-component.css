@@ -357,30 +357,56 @@ nav a:hover {
   position: relative;
 }
 
-.about {
+.about-section {
   padding: 100px 60px;
-  background-color: #121212;
+  background: 
+    linear-gradient(to bottom, rgba(15, 15, 15, 0.8), rgba(15, 15, 15, 0.95)),
+    url("/assets/images/hero-bg.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
   color: #f5f5f5;
+}
+
+.about-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 60px;
+  justify-content: space-between;
+}
+
+.about-text {
+  flex: 1 1 55%;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #dddddd;
+  font-family: "DM Sans", sans-serif;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  color: #c0a76e;
+  font-family: "Cinzel", serif;
+  margin-bottom: 20px;
+}
+
+.about-image {
+  flex: 1 1 40%;
   text-align: center;
 }
 
-.about-container {
-  max-width: 900px;
-  margin: 0 auto;
+.about-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
 }
 
-.about h2 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  color: #c0a76e;
-  font-family: "Cinzel", serif;
+.about-image img:hover {
+  transform: scale(1.03);
 }
 
-.about p {
-  font-size: 1rem;
-  line-height: 1.8;
-  color: #dddddd;
-}
 
 .faq {
   background-color: #121212;
@@ -576,7 +602,7 @@ nav a:hover {
 .mistakes-v2 {
   padding: 100px 60px;
   background: 
-    linear-gradient(to bottom, rgba(15, 15, 15, 0.96), rgba(15, 15, 15, 1)),
+    linear-gradient(to bottom, rgba(15, 15, 15, 0.8), rgba(15, 15, 15, 1)),
     url('/assets/images/hero-bg.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
@@ -640,4 +666,83 @@ nav a:hover {
   border-radius: 16px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
   object-fit: cover;
+}
+
+.edge-flex-upgrade {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 80px 40px;
+  background: linear-gradient(to bottom, rgba(15, 15, 15, 0.8), rgba(15, 15, 15, 0.95)), 
+              url("/assets/images/hero-bg.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 20px;
+}
+
+.edge-content {
+  flex: 1 1 55%;
+  background: rgba(15, 15, 15, 0.65);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 0 30px rgba(192, 167, 110, 0.15);
+  backdrop-filter: blur(4px);
+}
+
+.edge-content h2 {
+  font-size: 2.8rem;
+  font-family: "Cinzel", serif;
+  color: #c0a76e;
+  margin-bottom: 20px;
+}
+
+.lead-para {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 25px;
+  color: #dddddd;
+}
+
+.glow-list {
+  list-style: none;
+  padding: 0;
+}
+
+.glow-list li {
+  position: relative;
+  margin-bottom: 18px;
+  padding: 16px;
+  border-left: 4px solid #c0a76e;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 10px;
+  color: #eeeeee;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.glow-list li:hover {
+  box-shadow: 0 0 15px rgba(192, 167, 110, 0.3);
+  transform: translateY(-4px);
+}
+
+.tagline {
+  margin-top: 30px;
+  font-size: 1.15rem;
+  color: #c0a76e;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  text-align: center;
+}
+
+.edge-image {
+  flex: 1 1 35%;
+  text-align: center;
+}
+
+.edge-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
 }
