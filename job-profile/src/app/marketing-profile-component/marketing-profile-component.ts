@@ -1,16 +1,41 @@
-import { Component, HostListener } from '@angular/core';
+import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { TermsComponent } from '../terms-component/terms.component';
 import { CommonModule } from '@angular/common';
 import { WhyUsComponent } from '../why-us.component/why-us.component';
+import { PrivacyComponent } from '../privacy.component/privacy.component';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-marketing-profile-component',
-  imports: [MatIconModule, TermsComponent, CommonModule, WhyUsComponent],
+  imports: [
+    MatIconModule,
+    TermsComponent,
+    CommonModule,
+    WhyUsComponent,
+    PrivacyComponent,
+    RouterModule,
+  ],
   templateUrl: './marketing-profile-component.html',
   styleUrl: './marketing-profile-component.css',
 })
-export class MarketingProfileComponent {
+export class MarketingProfileComponent implements AfterViewInit {
+
+  constructor(private route:ActivatedRoute) {
+
+  }
+
+  ngAfterViewInit(): void {
+    this.route.fragment.subscribe((fragment: string | null) => {
+      if (fragment) {
+        const element = document.getElementById(fragment);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+  }
+
   user = {
     socialLinks: {
       linkedin: 'https://www.linkedin.com/in/rithuik-rajeev-06567795',
@@ -25,13 +50,23 @@ export class MarketingProfileComponent {
   onWindowScroll() {
     this.scrolledDown = window.scrollY > 10;
   }
+  privacyVisible = false;
 
   showTerms() {
     this.termsVisible = true;
+    this.privacyVisible = false;
   }
-
 
   hideTerms() {
     this.termsVisible = false;
+  }
+
+  showPrivacy() {
+    this.privacyVisible = true;
+    this.termsVisible = false;
+  }
+
+  hidePrivacy() {
+    this.privacyVisible = false;
   }
 }

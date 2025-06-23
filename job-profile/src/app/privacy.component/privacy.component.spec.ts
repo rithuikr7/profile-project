@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WhyUsComponent } from './why-us.component';
+import { PrivacyComponent } from './privacy.component';
 
-describe('WhyUsComponent', () => {
-  let component: WhyUsComponent;
-  let fixture: ComponentFixture<WhyUsComponent>;
+describe('PrivacyComponent', () => {
+  let component: PrivacyComponent;
+  let fixture: ComponentFixture<PrivacyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [WhyUsComponent],
+      imports: [PrivacyComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(WhyUsComponent);
+    fixture = TestBed.createComponent(PrivacyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,15 +1,14 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-terms',
-  imports: [],
   templateUrl: './terms.component.html',
-  styleUrl: './terms.component.css',
+  styleUrls: ['./terms.component.css'],
 })
 export class TermsComponent {
-  @Output() back = new EventEmitter<void>();
-
-  backToMain() {
-    this.back.emit();
+  constructor(private router:Router) {}
+  goBack() {
+    this.router.navigate(['/']);
   }
 }

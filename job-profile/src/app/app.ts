@@ -3,6 +3,7 @@ import { ProfileComponent } from './profile-component/profile-component';
 import { CommonModule } from '@angular/common';
 import { MarketingProfileComponent } from './marketing-profile-component/marketing-profile-component';
 import { MatIconModule } from '@angular/material/icon';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
     CommonModule,
     MarketingProfileComponent,
     MatIconModule,
+    RouterOutlet
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',
