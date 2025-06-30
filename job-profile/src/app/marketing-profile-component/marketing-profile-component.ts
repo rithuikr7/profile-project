@@ -4,7 +4,8 @@ import { TermsComponent } from '../terms-component/terms.component';
 import { CommonModule } from '@angular/common';
 import { WhyUsComponent } from '../why-us.component/why-us.component';
 import { PrivacyComponent } from '../privacy.component/privacy.component';
-import { ActivatedRoute, RouterModule } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-marketing-profile-component',
@@ -15,15 +16,16 @@ import { ActivatedRoute, RouterModule } from '@angular/router';
     WhyUsComponent,
     PrivacyComponent,
     RouterModule,
+    FooterComponent,
   ],
   templateUrl: './marketing-profile-component.html',
   styleUrl: './marketing-profile-component.css',
 })
 export class MarketingProfileComponent implements AfterViewInit {
-
-  constructor(private route:ActivatedRoute) {
-
-  }
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+  ) {}
 
   ngAfterViewInit(): void {
     this.route.fragment.subscribe((fragment: string | null) => {
@@ -68,5 +70,17 @@ export class MarketingProfileComponent implements AfterViewInit {
 
   hidePrivacy() {
     this.privacyVisible = false;
+  }
+
+  navigateToSection(fragment: string) {
+    this.router.navigate(['/'], { fragment }).then(() => {
+      // Delay to let the view stabilize before scrolling
+      setTimeout(() => {
+        const element = document.getElementById(fragment);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    });
   }
 }

@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./terms.component.css'],
 })
 export class TermsComponent {
-  constructor(private router:Router) {}
+  constructor(private router: Router) {}
   goBack() {
     this.router.navigate(['/']);
   }

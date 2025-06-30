@@ -1,6 +1,6 @@
 <div>
   <header [ngClass]="{ 'header-scrolled': scrolledDown }">
-    <div class="logo">Lynqa Strategic Finance</div>
+    <div class="logo">Lynqa Strategic Consulting</div>
     <nav>
       <ul>
         <li><a class="menu" [routerLink]="['/']" fragment="hero">Home</a></li>
@@ -35,9 +35,9 @@
         </blockquote>
 
         <p>
-          In today’s evolving market, decision-makers face constant shifts—from
-          credit cycles and yield volatility to investor sentiment and
-          regulatory landscapes.For decision-makers, this means one thing:
+          In today’s evolving market, decision-makers face constant shifts -
+          from credit cycles and yield volatility to investor sentiment and
+          regulatory landscapes. For decision-makers, this means one thing:
           complexity.
           <br /><br />
           These challenges bring both threats and rare monetizable windows.
@@ -165,19 +165,19 @@
           </p>
           <ul class="mistakes-list">
             <li>
-              <strong>Chasing Funds Without Strategy</strong> — Weak negotiation
+              <strong>Chasing Funds Without Strategy</strong> - Weak negotiation
               leverage, confused capital direction.
             </li>
             <li>
-              <strong>Overlooking Documentation Precision</strong> — Delays
+              <strong>Overlooking Documentation Precision</strong> - Delays
               investor trust, reduces execution confidence.
             </li>
             <li>
-              <strong>Ignoring Market Yield Signals</strong> — Mispriced debt,
+              <strong>Ignoring Market Yield Signals</strong> - Mispriced debt,
               unnecessary premium payouts.
             </li>
             <li>
-              <strong>Mixing Advice with Distribution</strong> — Creates SEBI
+              <strong>Mixing Advice with Distribution</strong> - Creates SEBI
               compliance red flags, blurs roles.
             </li>
           </ul>
@@ -207,9 +207,8 @@
           <div class="service">
             <h3>Strategic Fund-Raising Management</h3>
             <p>
-              Provide end-to-end support for private market capital
-              access—defining timing, positioning, and execution steps with
-              clarity.
+              Provide end-to-end support for private market capital access -
+              defining timing, positioning, and execution steps with clarity.
             </p>
           </div>
           <div class="service">
@@ -254,7 +253,7 @@
           <ul class="why-list glow-list">
             <li>
               <strong> Purpose-Driven Structuring:</strong> Deal logic tailored
-              to business—not hype.
+              to business - not hype.
             </li>
             <li>
               <strong> Strategic Intelligence, Not Advice:</strong> We engineer
@@ -275,12 +274,12 @@
           </ul>
 
           <blockquote class="tagline">
-            “At Lynqa, we don't offer services—we engineer financial outcomes.”
+            “At Lynqa, we don't offer services, we engineer financial outcomes.”
           </blockquote>
         </div>
 
         <!-- IMAGE -->
-        <div class="edge-image">
+        <div class="about-image">
           <img src="assets/images/handshake.png" alt="Professional handshake" />
         </div>
       </div>
@@ -291,8 +290,8 @@
         <div class="about-text">
           <h2>About Lynqa</h2>
           <p>
-            Lynqa Strategic Finance is a boutique capital strategy partner—not a
-            distributor, not an advisor. We work behind the spotlight, helping
+            Lynqa Strategic Finance is a boutique capital strategy partner, not
+            a distributor, not an advisor. We work behind the spotlight, helping
             businesses align intent with investor expectations through strategic
             documentation, deal structuring, and market-savvy execution.
           </p>
@@ -310,7 +309,7 @@
           </p>
           <p>
             Whether you're raising your first CP or optimizing recurring
-            issuance, Lynqa steps in where noise ends—and strategy begins.
+            issuance, Lynqa steps in where noise ends and strategy begins.
           </p>
         </div>
 
@@ -340,8 +339,8 @@
           <h3>So what exactly do you offer?</h3>
           <p>
             We assist companies with capital strategy, deal negotiation,
-            documentation, and structuring—specifically around debt instruments
-            like commercial papers and NCDs.
+            documentation, and structuring - specifically around debt
+            instruments like commercial papers and NCDs.
           </p>
         </div>
 
@@ -390,17 +389,9 @@
         </form>
       </div>
     </section>
-
-    <footer class="site-footer">
-      <div class="footer-content">
-        <p>&copy; 2025 Lynqa Strategic Finance. All rights reserved.</p>
-        <p>
-          Based in India | contact&#64;lynqa.finance |
-          <a href="#" (click)="showPrivacy()">Privacy Policy</a>
-        </p>
-      </div>
-    </footer>
+    <section>
+      <app-footer></app-footer>
+    </section>
   </div>
 </div>
-
 <app-terms *ngIf="termsVisible" (back)="hideTerms()"></app-terms>

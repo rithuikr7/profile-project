@@ -12,7 +12,7 @@ import { RouterOutlet } from '@angular/router';
     CommonModule,
     MarketingProfileComponent,
     MatIconModule,
-    RouterOutlet
+    RouterOutlet,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',
